@@ -5,19 +5,19 @@
     "version": "0.1.0",
     "keywords": ["Snippets", "Javascript"],
     "window": {
-        "title": "",
+        "title": "Snippets copier",
         "icon": "logo.png",
         "toolbar": false,
         "frame": true,
-        "width": 200,
-        "height": 150,
+        "width": 900,
+        "height": 500,
         "position": "center",
         "resizable": false,
         "show_in_taskbar": true,
         "as_desktop": true,
-        "always_on_top": false,
-    }
+        "always_on_top": false
+    },
     "webkit": {
-        "plugin": true,
+        "plugin": true
     }
 }

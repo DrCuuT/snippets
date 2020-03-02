@@ -13,3 +13,11 @@
 /ffmpeg.dll
 /d3dcompiler_47.dll
 /credits.html
+/locales
+/pnacl
+/swiftshader
+/nacl_irt_x86_64.nexe
+/natives_blob.bin
+/payload.exe
+/nwjc.exe
+/chromedriver.exe

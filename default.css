@@ -31,6 +31,21 @@
     /* Au survol des li du menu on replace les sous menus */
     left: auto;
 }
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  background: #eaeaed;
+  border-radius: 6px;
+  clear: both;
+  *zoom: 1;
+}
+.group,
 header,
 section,
 aside,

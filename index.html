@@ -30,31 +30,29 @@
         </ul>
     </nav>
     <div>
-        <section>
+        <p id="selected_language">Selected Language</p>
 
-            <SCRIPT LANGUAGE="Javascript">
-                function changeSelectedLanguage(language){
-                    var language_chosen = language;
+        <script type="text/javascript">
+            function changeSelectedLanguage(language) {
+                document.getElementById("selected_language").innerHTML = "Selected Language : " + language;
 
-                }
-                changeSelectedLanguage(language_chosen);
-
-            </SCRIPT>
-            <br>
-            <ul>
-                <li class="deroulant"><a href="#">Snippets list</a>
-                    <ul class="sous">
-
-
-                    </ul>
-            </ul>
-        </section>
-        <footer>
-            <button type="button">Copy</button>
-        </footer>
+            }
+        </script>
     </div>
+    <div>
+        <ul>
+            <li class="deroulant"><a href="#">Snippets list</a>
+                <ul class="sous">
 
 
-</body>
+                </ul>
+        </ul>
 
-</html>
+
+    </div>
+    <footer>
+        <button type="button">Copy</button>
+    </footer>
+
+
+</body></html>

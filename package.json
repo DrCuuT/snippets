@@ -24,6 +24,7 @@
         "plugin": true
     },
     "dependencies": {
+        "collections": "^5.1.9",
         "dedent-js": "^1.0.1"
     }
 }

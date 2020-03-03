@@ -16,6 +16,7 @@
     display: inherit;
 }
 #menu a {
+    background: #ffffff;
     text-decoration: none;
     display: block;
     color:#000;
@@ -40,21 +41,20 @@
   clear: both;
 }
 .group {
-  background: #eaeaed;
-  border-radius: 6px;
+  background: #ffffff;
+  border-radius: 10px;
   clear: both;
   *zoom: 1;
 }
-.group,
-header,
-section,
-aside,
+
 section {
+border:1px black solid;
   float: left;
   width: 30%;
 }
 aside {
+    border:1px black solid;
   float: right;
-  width: 65%;
+  width: 68%;
 }
 

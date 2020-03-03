@@ -4,53 +4,42 @@
     list-style: none;
 }
 #menu {
-/* on centre le menu dans la page */
+    /* on centre le menu dans la page */
     text-align: center;
 }
 #menu li {
-/* on place les liens du menu horizontalement */
+    /* on place les liens du menu horizontalement */
     display: inline-block;
 }
 #menu ul li {
-/* on enlève ce comportement pour les liens du sous menu */
+    /* on enlève ce comportement pour les liens du sous menu */
     display: inherit;
 }
 #menu a {
     text-decoration: none;
     display: block;
-	color:#000;
+    color:#000;
 }
 #menu ul {
     position: absolute;
-/* on cache les sous menus complètement sur la gauche */
+    /* on cache les sous menus complètement sur la gauche */
     left: -999em;
     text-align: left;
     z-index: 1000;
 }
 #menu li:hover ul {
-/* Au survol des li du menu on replace les sous menus */
+    /* Au survol des li du menu on replace les sous menus */
     left: auto;
 }
-
-/* Split the screen in half */
-.split {
-  height: 80%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+header,
+section,
+aside,
+section {
+  float: left;
+  width: 30%;
+}
+aside {
+  float: right;
+  width: 65%;
 }
 
-/* Control the left side */
-.left {
-  left: 0;
-  background-color: #111;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: red;
-}

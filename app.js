@@ -1,13 +1,12 @@
-var dedent = require('dedent-js')
+var dedent = require('dedent-js');
+import {test} from './javascript.js';
 
-var p = window.document.querySelector('p'),
-    button = document.getElementById('do'),
-    text = document.getElementById('texte'),
+var button = document.getElementById('copy'),
     snippet = dedent(`.screen-reader-text {
   position: absolute;
   top: -9999px;
   left: -9999px;
-}`)
+}`);
 
 function copyStringToClipboard (str) {
    // Create new element
@@ -31,9 +30,7 @@ function display(string) {
 };
 
 button.addEventListener('click', function () {
-    copyStringToClipboard(snippet)
-});
 
-Ligne 1
-Ligne 2
-    fin
+    button.innerHTML = "haha"
+    copyStringToClipboard("haha")
+});

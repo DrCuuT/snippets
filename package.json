@@ -3,7 +3,10 @@
     "name": "Snippets",
     "description": "Javascript snippets copier application",
     "version": "0.1.0",
-    "keywords": ["Snippets", "Javascript"],
+    "keywords": [
+        "Snippets",
+        "Javascript"
+    ],
     "window": {
         "title": "Snippets copier",
         "icon": "logo.png",
@@ -19,5 +22,8 @@
     },
     "webkit": {
         "plugin": true
+    },
+    "dependencies": {
+        "dedent-js": "^1.0.1"
     }
 }

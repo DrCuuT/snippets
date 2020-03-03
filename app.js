@@ -1,15 +1,15 @@
 var p = window.document.querySelector('p'),
-    start = document.querySelector('#do'),
-    snippet = "Ceci est du texte \s plus loin";
+    button = document.querySelector('#button'),
+    snippet = "Ceci est du texte \t plus loin";
 
 function display(string) {
     document.write(string);
 }
 
-start.addEventListener('click', function () {
+button.addEventListener('click', function () {
     display(snippet);
 });
 
-document.body.addEventListener(ondblclick, function () {
+document.body.addEventListener(dblclick, function () {
     location.reload();
 });

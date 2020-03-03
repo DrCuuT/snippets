@@ -11,54 +11,50 @@
 
 <body>
 
-    <header>
-        <ul id="menu">
-            <li><a href="#">Languages</a>
-                <ul>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">Python</a></li>
-                    <li><a href="#">Java</a></li>
-                    <li><a href="#">C/C#/C++</a></li>
-                    <li><a href="#">Bash</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Swift</a></li>
-                    <li><a href="#">Typescript</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Edit</a>
-                <ul>
-                    <li><a href="#">Copy</a></li>
-                    <li><a href="#">Cut</a></li>
-                    <li><a href="#">Save</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Window</a>
-                <ul>
-                    <li><a href="alwaysOnTopWindow.html" target="_blank">Open always-on-top window</a></li>
-                    <li><a href="#">Close</a></li>
+    <nav>
+        <ul>
+            <li class="deroulant"><a href="#">Languages</a>
+                <ul class="sous">
+                    <li><a href="#" , onclick="changeSelectedLanguage('Javascript')">JavaScript</a></li>
+                    <li><a href="#" , onclick="changeSelectedLanguage('HTML')">HTML</a></li>
+                    <li><a href="#" , onclick="changeSelectedLanguage('CSS')">CSS</a></li>
+                    <li><a href="#" , onclick="changeSelectedLanguage('Python')">Python</a></li>
+                    <li><a href="#" , onclick="changeSelectedLanguage('Java')">Java</a></li>
+                    <li><a href="#" , onclick="changeSelectedLanguage('C/C#/C++')">C/C#/C++</a></li>
+                    <li><a href="#" , onclick="changeSelectedLanguage('Bash')">Bash</a></li>
+                    <li><a href="#" , onclick="changeSelectedLanguage('Ruby')">Ruby</a></li>
+                    <li><a href="#" , onclick="changeSelectedLanguage('Swift')">Swift</a></li>
+                    <li><a href="#" , onclick="changeSelectedLanguage('Typescript')">Typescript</a></li>
                 </ul>
             </li>
         </ul>
-
-    </header>
-    <div class="group">
+    </nav>
+    <div>
         <section>
 
-
             <SCRIPT LANGUAGE="Javascript">
-                document.write("<H1>Langage selectionne</H1>");
+                function changeSelectedLanguage(language){
+                    var language_chosen = language;
+
+                }
+                changeSelectedLanguage(language_chosen);
+
             </SCRIPT>
             <br>
-            <code>liste des snippets</code>
+            <ul>
+                <li class="deroulant"><a href="#">Snippets list</a>
+                    <ul class="sous">
+
+
+                    </ul>
+            </ul>
         </section>
-        <aside>
-
-
-            <SCRIPT LANGUAGE="Javascript">
-                document.write("<H1>affichage de la snippet selectionnee</H1>");
-            </SCRIPT>
-        </aside>
+        <footer>
+            <button type="button">Copy</button>
+        </footer>
     </div>
-</body></html>
+
+
+</body>
+
+</html>

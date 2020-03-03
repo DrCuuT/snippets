@@ -1,74 +1,69 @@
-#menu,
-#menu ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
-
-#menu {
-    /* on centre le menu dans la page */
+#nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+}
+#nav ul {
+    list-style-type: none;
+    display: flex;
     text-align: center;
 }
 
-#menu li {
-    /* on place les liens du menu horizontalement */
-    display: inline-block;
+#nav ul li {
+    flex: 1 1 auto;
+    position: relative;
+
 }
 
-#menu ul li {
-    /* on enlève ce comportement pour les liens du sous menu */
-    display: inherit;
-}
 
-#menu a {
-    background: #ffffff;
-    text-decoration: none;
+#nav a {
     display: block;
-    color: #000;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
 }
-
-#menu ul {
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
     position: absolute;
-    /* on cache les sous menus complètement sur la gauche */
-    left: -999em;
-    text-align: left;
+    width: 100%;
     z-index: 1000;
 }
-
-#menu li:hover ul {
-    /* Au survol des li du menu on replace les sous menus */
-    left: auto;
+nav > ul li:hover .sous{
+    display: flex;
+    flex-flow: column wrap;
+}
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
 }
 
-#Open always-on-top window {}
-
-.group:before,
-.group:after {
-    content: "";
-    display: table;
-}
-
-.group:after {
-    clear: both;
-}
-
-.group {
-    background: #ffffff;
-    border-radius: 10px;
-    clear: both;
-    *zoom: 1;
-}
-
-section {
-    border: 1px black solid;
-    overflow:auto;
-    float: left;
-    width: 30%;
-}
-
-aside {
-    border: 1px black solid;
-    overflow:auto;
-    float: right;
-    width: 68%;
+footer {
+    text-align : center;
 }
